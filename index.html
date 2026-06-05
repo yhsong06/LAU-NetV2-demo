@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LAU-NetV2 Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="kicker">Demo</div>
+        <h1 id="paperTitle">Real-Time Speech Enhancement on Edge Devices Guided by Harmonic and Voice-Activity Cues Utilizing Skin-Attachable Accelerometer</h1>
+        <p class="sub">Anonymous demo page (no authors/affiliations shown).</p>
+
+        <div class="btn-row">
+	      <a class="btn btn-disabled" href="#" aria-disabled="true" title="Coming soon">Paper</a>
+		  <a class="btn btn-ghost" id="btnCode" href="https://github.com/Anonymous-0606/LAU-NetV2" target="_blank" rel="noopener">Code (GitHub)</a>
+          <a class="btn btn-ghost" id="btnDataset" href="https://taps.postech.ac.kr" target="_blank" rel="noopener">Dataset (TAPS)</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Abstract</h2>
+      <p id="abstractText" class="abstract">
+        <!-- TODO: paste your full abstract here (show all) -->
+    	Skin-attachable accelerometers (ACCs) measure noise-robust speech vibrations, complementing acoustic microphones (AMs). However, multimodal models fuse both signals with parallel encoders or attention blocks, which hinders edge deployment. We present a lightweight ACC-assisted U-Net v2 (LAU-NetV2) for speech enhancement based on efficient cue-guided feature-wise linear modulation (FiLM). From ACC, we derive speech-informative cues: temporal voice activity to suppress noise and spectral harmonics to emphasize voiced structures. These cues condition intermediate U-Net feature maps via FiLM to selectively control time-frequency representations. The FiLM module adds only 30k parameters, yielding a total of 46k—68× fewer than heavy multimodal models. Integrating ACC cues improves PESQ from 1.78 to 2.78 on the TAPS+DNS dataset and outperforms lightweight baselines. Finally, our wearable prototype with the LAU-NetV2 runs in 48.66 ms on a microcontroller, enabling real-time voice interfaces.      
+	  </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="listen-header">
+        <h2>Listen</h2>
+        <p class="muted">Select speaker and SNR. One representative utterance is shown per condition.</p>
+      </div>
+
+      <div class="controls" id="controls">
+        <div class="control-group">
+          <div class="control-label">Speaker</div>
+          <div class="radio-row" id="speakerRadios"></div>
+        </div>
+
+        <div class="control-group">
+          <div class="control-label">SNR (dB)</div>
+          <div class="tab-row" id="snrTabs"></div>
+        </div>
+      </div>
+
+      <div class="grid" id="cardsGrid"></div>
+      <p class="muted small" id="statusLine" style="display:none;"></p>
+    </div>
+  </section>
+
+  <section id="references">
+    <h2>References</h2>
+    <p>Baselines (IEEE style). Use “Copy BibTeX” to cite quickly.</p>
+
+    <div class="ref-card">
+      <p>
+        [1] L. Yang, W. Liu, R. Meng, G. Lee, S. Baek, and H.-G. Moon,
+        “FSPEN: An ultra-lightweight network for real-time speech enhancement,”
+        in <i>Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)</i>,
+        2024, pp. 10671–10675.
+      </p>
+      <button onclick="copyBib('bib1')">Copy BibTeX</button>
+    </div>
+
+    <div class="ref-card">
+      <p>
+        [2] H. Yan, J. Zhang, C. Fan, Y. Zhou, and P. Liu,
+        “LiSenNet: Lightweight sub-band and dual-path modeling for real-time speech enhancement,”
+        in <i>Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)</i>,
+        2025, pp. 1–5.
+      </p>
+      <button onclick="copyBib('bib2')">Copy BibTeX</button>
+    </div>
+
+    <div class="ref-card">
+      <p>
+        [3] M. Ohlenbusch, C. Rollwage, and S. Doclo,
+        “Low-complexity own voice reconstruction for hearables with an in-ear microphone,”
+        in <i>Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)</i>,
+        2025, pp. 1–5.
+      </p>
+      <button onclick="copyBib('bib3')">Copy BibTeX</button>
+    </div>
+
+    <div class="ref-card">
+      <p>
+        [4] Y. Song, Y. Kim, and Y. Song,
+        “Lightweight speech enhancement model based on harmonic attention and phase estimation with skin-attachable accelerometer,”
+        in <i>Proc. Interspeech</i>, 2025, pp. 66–70.
+      </p>
+      <button onclick="copyBib('bib4')">Copy BibTeX</button>
+    </div>
+
+    <div class="ref-card">
+      <p>
+        [5] L. He, H. Hou, S. Shi, X. Shuai, and Z. Yan,
+        “Towards bone-conducted vibration speech enhancement on head-mounted wearables,”
+        in <i>Proc. ACM MobiSys</i>, 2023, pp. 14–27.
+      </p>
+      <button onclick="copyBib('bib5')">Copy BibTeX</button>
+    </div>
+  </section>
+
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-title" id="modalTitle"></div>
+      <img id="modalImg" alt="Spectrogram enlarged view" />
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+  <script>
+  const bibtex = {
+    bib1: `@inproceedings{yang2024fspen,
+    title={FSPEN: An ultra-lightweight network for real-time speech enhancement},
+    author={Yang, L. and Liu, W. and Meng, R. and Lee, G. and Baek, S. and Moon, H.-G.},
+    booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    pages={10671--10675},
+    year={2024}
+  }`,
+
+    bib2: `@inproceedings{yan2025lisennet,
+    title={LiSenNet: Lightweight sub-band and dual-path modeling for real-time speech enhancement},
+    author={Yan, H. and Zhang, J. and Fan, C. and Zhou, Y. and Liu, P.},
+    booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    pages={1--5},
+    year={2025}
+  }`,
+
+    bib3: `@inproceedings{ohlenbusch2025ownvoice,
+    title={Low-complexity own voice reconstruction for hearables with an in-ear microphone},
+    author={Ohlenbusch, M. and Rollwage, C. and Doclo, S.},
+    booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    pages={1--5},
+    year={2025}
+  }`,
+
+    bib4: `@inproceedings{song2025lau,
+    title={Lightweight speech enhancement model based on harmonic attention and phase estimation with skin-attachable accelerometer},
+    author={Song, Y. and Kim, Y. and Song, Y.},
+    booktitle={Interspeech},
+    pages={66--70},
+    year={2025}
+  }`,
+
+    bib5: `@inproceedings{he2023vibvoice,
+    title={Towards bone-conducted vibration speech enhancement on head-mounted wearables},
+    author={He, L. and Hou, H. and Shi, S. and Shuai, X. and Yan, Z.},
+    booktitle={ACM MobiSys},
+    pages={14--27},
+    year={2023}
+  }`
+  };
+
+  function copyBib(key) {
+    navigator.clipboard.writeText(bibtex[key]);
+    alert("BibTeX copied to clipboard.");
+  }
+  </script>
+
+</body>
+</html>

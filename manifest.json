@@ -1,0 +1,499 @@
+{
+  "links": {
+    "code": "https://github.com/Anonymous-0606/LAU-NetV2",
+    "dataset": "https://taps.postech.ac.kr"
+  },
+  "speakers": [
+    {
+      "id": "p00",
+      "label": "Male"
+    },
+    {
+      "id": "p24",
+      "label": "Female"
+    }
+  ],
+  "snrs": [
+    -20,
+    -10,
+    0,
+    10,
+    20
+  ],
+  "cards": [
+    {
+      "key": "ACC",
+      "title": "ACC"
+    },
+    {
+      "key": "AM_Noisy",
+      "title": "Noisy AM"
+    },
+    {
+      "key": "AM",
+      "title": "AM"
+    },
+    {
+      "key": "FSPEN",
+      "title": "FSPEN [1]"
+    },
+    {
+      "key": "LiSenNet",
+      "title": "LiSenNet [2]"
+    },
+    {
+      "key": "FT_JNF_S",
+      "title": "FT-JNF-S [3]"
+    },
+    {
+      "key": "LAUNetV1",
+      "title": "LAU-NetV1 [4]"
+    },
+    {
+      "key": "VibVoice",
+      "title": "VibVoice [5]"
+    },
+    {
+      "key": "LAUNetV2",
+      "title": "LAU-NetV2 (Our model)"
+    }
+  ],
+  "references": [
+    {
+      "ieee": "TODO: Add IEEE-style references for baselines here.",
+      "bibtex": "@article{todo,\n  title={TODO},\n  author={TODO},\n  year={TODO}\n}"
+    }
+  ],
+  "items": {
+    "p00|-20": {
+      "speaker": "p00",
+      "snr": -20,
+      "prefix": "p00_u14",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p00_u14_acc.wav",
+          "spec": "assets/spec/ACC/p00_u14_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p00_u14_mic.wav",
+          "spec": "assets/spec/AM/p00_u14_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p00_u14_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p00_u14_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_-20/p00_u14_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_-20/p00_u14_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_-20/p00_u14_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_-20/p00_u14_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_-20/p00_u14_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_-20/p00_u14_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_-20/p00_u14_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_-20/p00_u14_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_-20/p00_u14_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_-20/p00_u14_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_-20/p00_u14_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_-20/p00_u14_vibvoice_output.webp"
+        }
+      }
+    },
+    "p00|-10": {
+      "speaker": "p00",
+      "snr": -10,
+      "prefix": "p00_u00",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p00_u00_acc.wav",
+          "spec": "assets/spec/ACC/p00_u00_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p00_u00_mic.wav",
+          "spec": "assets/spec/AM/p00_u00_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p00_u00_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p00_u00_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_-10/p00_u00_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_-10/p00_u00_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_-10/p00_u00_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_-10/p00_u00_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_-10/p00_u00_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_-10/p00_u00_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_-10/p00_u00_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_-10/p00_u00_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_-10/p00_u00_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_-10/p00_u00_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_-10/p00_u00_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_-10/p00_u00_vibvoice_output.webp"
+        }
+      }
+    },
+    "p00|0": {
+      "speaker": "p00",
+      "snr": 0,
+      "prefix": "p00_u02",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p00_u02_acc.wav",
+          "spec": "assets/spec/ACC/p00_u02_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p00_u02_mic.wav",
+          "spec": "assets/spec/AM/p00_u02_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p00_u02_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p00_u02_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_0/p00_u02_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_0/p00_u02_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_0/p00_u02_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_0/p00_u02_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_0/p00_u02_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_0/p00_u02_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_0/p00_u02_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_0/p00_u02_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_0/p00_u02_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_0/p00_u02_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_0/p00_u02_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_0/p00_u02_vibvoice_output.webp"
+        }
+      }
+    },
+    "p00|10": {
+      "speaker": "p00",
+      "snr": 10,
+      "prefix": "p00_u04",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p00_u04_acc.wav",
+          "spec": "assets/spec/ACC/p00_u04_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p00_u04_mic.wav",
+          "spec": "assets/spec/AM/p00_u04_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p00_u04_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p00_u04_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_10/p00_u04_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_10/p00_u04_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_10/p00_u04_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_10/p00_u04_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_10/p00_u04_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_10/p00_u04_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_10/p00_u04_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_10/p00_u04_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_10/p00_u04_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_10/p00_u04_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_10/p00_u04_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_10/p00_u04_vibvoice_output.webp"
+        }
+      }
+    },
+    "p00|20": {
+      "speaker": "p00",
+      "snr": 20,
+      "prefix": "p00_u11",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p00_u11_acc.wav",
+          "spec": "assets/spec/ACC/p00_u11_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p00_u11_mic.wav",
+          "spec": "assets/spec/AM/p00_u11_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p00_u11_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p00_u11_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_20/p00_u11_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_20/p00_u11_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_20/p00_u11_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_20/p00_u11_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_20/p00_u11_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_20/p00_u11_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_20/p00_u11_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_20/p00_u11_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_20/p00_u11_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_20/p00_u11_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_20/p00_u11_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_20/p00_u11_vibvoice_output.webp"
+        }
+      }
+    },
+    "p24|-20": {
+      "speaker": "p24",
+      "snr": -20,
+      "prefix": "p24_u03",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p24_u03_acc.wav",
+          "spec": "assets/spec/ACC/p24_u03_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p24_u03_mic.wav",
+          "spec": "assets/spec/AM/p24_u03_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p24_u03_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p24_u03_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_-20/p24_u03_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_-20/p24_u03_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_-20/p24_u03_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_-20/p24_u03_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_-20/p24_u03_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_-20/p24_u03_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_-20/p24_u03_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_-20/p24_u03_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_-20/p24_u03_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_-20/p24_u03_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_-20/p24_u03_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_-20/p24_u03_vibvoice_output.webp"
+        }
+      }
+    },
+    "p24|-10": {
+      "speaker": "p24",
+      "snr": -10,
+      "prefix": "p24_u06",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p24_u06_acc.wav",
+          "spec": "assets/spec/ACC/p24_u06_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p24_u06_mic.wav",
+          "spec": "assets/spec/AM/p24_u06_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p24_u06_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p24_u06_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_-10/p24_u06_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_-10/p24_u06_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_-10/p24_u06_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_-10/p24_u06_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_-10/p24_u06_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_-10/p24_u06_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_-10/p24_u06_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_-10/p24_u06_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_-10/p24_u06_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_-10/p24_u06_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_-10/p24_u06_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_-10/p24_u06_vibvoice_output.webp"
+        }
+      }
+    },
+    "p24|0": {
+      "speaker": "p24",
+      "snr": 0,
+      "prefix": "p24_u00",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p24_u00_acc.wav",
+          "spec": "assets/spec/ACC/p24_u00_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p24_u00_mic.wav",
+          "spec": "assets/spec/AM/p24_u00_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p24_u00_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p24_u00_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_0/p24_u00_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_0/p24_u00_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_0/p24_u00_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_0/p24_u00_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_0/p24_u00_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_0/p24_u00_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_0/p24_u00_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_0/p24_u00_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_0/p24_u00_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_0/p24_u00_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_0/p24_u00_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_0/p24_u00_vibvoice_output.webp"
+        }
+      }
+    },
+    "p24|10": {
+      "speaker": "p24",
+      "snr": 10,
+      "prefix": "p24_u31",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p24_u31_acc.wav",
+          "spec": "assets/spec/ACC/p24_u31_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p24_u31_mic.wav",
+          "spec": "assets/spec/AM/p24_u31_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p24_u31_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p24_u31_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_10/p24_u31_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_10/p24_u31_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_10/p24_u31_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_10/p24_u31_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_10/p24_u31_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_10/p24_u31_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_10/p24_u31_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_10/p24_u31_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_10/p24_u31_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_10/p24_u31_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_10/p24_u31_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_10/p24_u31_vibvoice_output.webp"
+        }
+      }
+    },
+    "p24|20": {
+      "speaker": "p24",
+      "snr": 20,
+      "prefix": "p24_u02",
+      "files": {
+        "ACC": {
+          "audio": "assets/audio/ACC/p24_u02_acc.wav",
+          "spec": "assets/spec/ACC/p24_u02_acc.webp"
+        },
+        "AM": {
+          "audio": "assets/audio/AM/p24_u02_mic.wav",
+          "spec": "assets/spec/AM/p24_u02_mic.webp"
+        },
+        "AM_Noisy": {
+          "audio": "assets/audio/AM_Noisy/p24_u02_noisy_mic.wav",
+          "spec": "assets/spec/AM_Noisy/p24_u02_noisy_mic.webp"
+        },
+        "FSPEN": {
+          "audio": "assets/audio/FSPEN/SNR_20/p24_u02_output.wav",
+          "spec": "assets/spec/FSPEN/SNR_20/p24_u02_output.webp"
+        },
+        "FT_JNF_S": {
+          "audio": "assets/audio/FT_JNF_S/SNR_20/p24_u02_enhanced.wav",
+          "spec": "assets/spec/FT_JNF_S/SNR_20/p24_u02_enhanced.webp"
+        },
+        "LAUNetV1": {
+          "audio": "assets/audio/LAUNetV1/SNR_20/p24_u02_combined_output.wav",
+          "spec": "assets/spec/LAUNetV1/SNR_20/p24_u02_combined_output.webp"
+        },
+        "LAUNetV2": {
+          "audio": "assets/audio/LAUNetV2/SNR_20/p24_u02_combined_output.wav",
+          "spec": "assets/spec/LAUNetV2/SNR_20/p24_u02_combined_output.webp"
+        },
+        "LiSenNet": {
+          "audio": "assets/audio/LiSenNet/SNR_20/p24_u02_enhanced.wav",
+          "spec": "assets/spec/LiSenNet/SNR_20/p24_u02_enhanced.webp"
+        },
+        "VibVoice": {
+          "audio": "assets/audio/VibVoice/SNR_20/p24_u02_vibvoice_output.wav",
+          "spec": "assets/spec/VibVoice/SNR_20/p24_u02_vibvoice_output.webp"
+        }
+      }
+    }
+  }
+}

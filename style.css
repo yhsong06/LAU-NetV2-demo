@@ -234,61 +234,125 @@ h2{ margin:0 0 10px; font-size:22px; }
 
 /* DNSMOS result table */
 .dnsmos-block{
-  margin-top:26px;
-  padding:18px;
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  background:rgba(15,22,38,.55);
-  box-shadow:var(--shadow);
+  width:100%;
+  margin-top:18px;
 }
 
-.dnsmos-header{
-  align-items:flex-start;
-  margin-bottom:14px;
+.dnsmos-title-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin:0 0 12px;
+}
+
+.dnsmos-title-row h2{
+  margin:0;
+  font-size:22px;
+  letter-spacing:.01em;
 }
 
 .table-wrap{
+  width:100%;
   overflow-x:auto;
-  border:1px solid var(--line);
-  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.018)),
+    rgba(15,22,38,.72);
+  box-shadow: var(--shadow);
 }
 
 .dnsmos-table{
   width:100%;
-  border-collapse:collapse;
-  min-width:680px;
-  background:rgba(255,255,255,.02);
+  min-width:760px;
+  border-collapse:separate;
+  border-spacing:0;
+  table-layout:fixed;
 }
 
 .dnsmos-table th,
 .dnsmos-table td{
-  padding:12px 14px;
-  border-bottom:1px solid var(--line);
+  padding:15px 18px;
   text-align:center;
   white-space:nowrap;
+  border-bottom:1px solid rgba(255,255,255,.075);
+  font-variant-numeric: tabular-nums;
 }
 
 .dnsmos-table th:first-child,
 .dnsmos-table td:first-child{
+  width:31%;
   text-align:left;
+  padding-left:22px;
+}
+
+.dnsmos-table th:not(:first-child),
+.dnsmos-table td:not(:first-child){
+  width:23%;
 }
 
 .dnsmos-table thead th{
+  color:#f4f7ff;
+  font-size:13px;
+  font-weight:750;
+  letter-spacing:.045em;
+  text-transform:uppercase;
+  background:rgba(110,168,255,.16);
+  border-bottom:1px solid rgba(110,168,255,.28);
+}
+
+.dnsmos-table thead th:first-child{
+  border-top-left-radius:18px;
+}
+
+.dnsmos-table thead th:last-child{
+  border-top-right-radius:18px;
+}
+
+.dnsmos-table tbody td{
   color:var(--text);
-  background:rgba(110,168,255,.14);
-  font-weight:700;
+  font-size:14px;
+}
+
+.dnsmos-table tbody tr:nth-child(even):not(.ours-row){
+  background:rgba(255,255,255,.025);
+}
+
+.dnsmos-table tbody tr:hover:not(.ours-row){
+  background:rgba(255,255,255,.055);
 }
 
 .dnsmos-table tbody tr:last-child td{
   border-bottom:none;
 }
 
-.dnsmos-table tbody tr:hover{
-  background:rgba(255,255,255,.04);
+.ours-row{
+  background:
+    linear-gradient(90deg, rgba(110,168,255,.20), rgba(110,168,255,.085));
 }
 
-.ours-row{
-  background:rgba(110,168,255,.12);
+.ours-row td{
+  color:#ffffff;
+  font-weight:800;
+  border-top:1px solid rgba(110,168,255,.30);
+}
+
+.ours-row td:first-child{
+  border-bottom-left-radius:18px;
+}
+
+.ours-row td:last-child{
+  border-bottom-right-radius:18px;
+}
+
+@media (max-width: 620px){
+  .dnsmos-title-row h2{
+    font-size:20px;
+  }
+
+  .dnsmos-table{
+    min-width:720px;
+  }
 }
 
 .modal{ position:fixed; inset:0; display:none; z-index:50; }

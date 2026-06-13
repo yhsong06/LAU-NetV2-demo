@@ -54,6 +54,74 @@
 
       <div class="grid" id="cardsGrid"></div>
       <p class="muted small" id="statusLine" style="display:none;"></p>
+
+      <div class="dnsmos-block" id="dnsmosResults">
+        <div class="listen-header dnsmos-header">
+          <div>
+            <h2>Complementary DNSMOS P.835 Results</h2>
+            <p class="muted">Scores are reported as mean ± standard deviation over 1,000 TAPS+DNS test utterances. All signals were standardized to an 8-kHz bandwidth and then resampled to 16 kHz for DNSMOS inference.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="dnsmos-table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>SIG ↑</th>
+                <th>BAK ↑</th>
+                <th>OVRL ↑</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Noisy AM</td>
+                <td>2.368 ± 1.037</td>
+                <td>2.158 ± 1.019</td>
+                <td>1.889 ± 0.751</td>
+              </tr>
+              <tr>
+                <td>FSPEN [1]</td>
+                <td>2.742 ± 0.801</td>
+                <td>3.193 ± 0.910</td>
+                <td>2.369 ± 0.744</td>
+              </tr>
+              <tr>
+                <td>LiSenNet [2]</td>
+                <td>2.732 ± 0.748</td>
+                <td>3.484 ± 0.720</td>
+                <td>2.424 ± 0.715</td>
+              </tr>
+              <tr>
+                <td>VibVoice [5]</td>
+                <td>3.108 ± 0.501</td>
+                <td>3.796 ± 0.326</td>
+                <td>2.767 ± 0.514</td>
+              </tr>
+              <tr>
+                <td>FT-JNF S [3]</td>
+                <td>3.145 ± 0.325</td>
+                <td>3.814 ± 0.318</td>
+                <td>2.794 ± 0.363</td>
+              </tr>
+              <tr>
+                <td>LAU-NetV1 [4]</td>
+                <td>3.232 ± 0.370</td>
+                <td>3.847 ± 0.284</td>
+                <td>2.886 ± 0.408</td>
+              </tr>
+              <tr class="ours-row">
+                <td>LAU-NetV2 (ours)</td>
+                <td><strong>3.347 ± 0.206</strong></td>
+                <td><strong>3.975 ± 0.170</strong></td>
+                <td><strong>3.044 ± 0.238</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="muted small">DNSMOS P.835 is a non-intrusive objective metric. Higher SIG, BAK, and OVRL scores indicate better predicted speech quality, background quality, and overall quality, respectively.</p>
+      </div>
     </div>
   </section>
 

@@ -56,15 +56,12 @@
       <p class="muted small" id="statusLine" style="display:none;"></p>
 
       <div class="dnsmos-block" id="dnsmosResults">
-        <div class="listen-header dnsmos-header">
-          <div>
-            <h2>Complementary DNSMOS P.835 Results</h2>
-            <p class="muted">Scores are reported as mean ± standard deviation over 1,000 TAPS+DNS test utterances. All signals were standardized to an 8-kHz bandwidth and then resampled to 16 kHz for DNSMOS inference.</p>
-          </div>
+        <div class="dnsmos-title-row">
+          <h2>DNSMOS P.835 Results</h2>
         </div>
 
         <div class="table-wrap">
-          <table class="dnsmos-table">
+          <table class="dnsmos-table" aria-label="DNSMOS P.835 results">
             <thead>
               <tr>
                 <th>Method</th>
@@ -93,12 +90,6 @@
                 <td>2.424 ± 0.715</td>
               </tr>
               <tr>
-                <td>VibVoice [5]</td>
-                <td>3.108 ± 0.501</td>
-                <td>3.796 ± 0.326</td>
-                <td>2.767 ± 0.514</td>
-              </tr>
-              <tr>
                 <td>FT-JNF S [3]</td>
                 <td>3.145 ± 0.325</td>
                 <td>3.814 ± 0.318</td>
@@ -110,17 +101,21 @@
                 <td>3.847 ± 0.284</td>
                 <td>2.886 ± 0.408</td>
               </tr>
+              <tr>
+                <td>VibVoice [5]</td>
+                <td>3.108 ± 0.501</td>
+                <td>3.796 ± 0.326</td>
+                <td>2.767 ± 0.514</td>
+              </tr>
               <tr class="ours-row">
                 <td>LAU-NetV2 (ours)</td>
-                <td><strong>3.347 ± 0.206</strong></td>
-                <td><strong>3.975 ± 0.170</strong></td>
-                <td><strong>3.044 ± 0.238</strong></td>
+                <td>3.347 ± 0.206</td>
+                <td>3.975 ± 0.170</td>
+                <td>3.044 ± 0.238</td>
               </tr>
             </tbody>
           </table>
         </div>
-
-        <p class="muted small">DNSMOS P.835 is a non-intrusive objective metric. Higher SIG, BAK, and OVRL scores indicate better predicted speech quality, background quality, and overall quality, respectively.</p>
       </div>
     </div>
   </section>

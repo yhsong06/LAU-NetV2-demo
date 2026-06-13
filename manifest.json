@@ -43,7 +43,7 @@
     },
     {
       "key": "FT_JNF_S",
-      "title": "FT-JNF-S [3]"
+      "title": "FT-JNF S [3]"
     },
     {
       "key": "LAUNetV1",
@@ -55,7 +55,7 @@
     },
     {
       "key": "LAUNetV2",
-      "title": "LAU-NetV2 (Our model)"
+      "title": "LAU-NetV2 (ours)"
     }
   ],
   "references": [

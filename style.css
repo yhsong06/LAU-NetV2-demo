@@ -231,6 +231,66 @@ h2{ margin:0 0 10px; font-size:22px; }
   background: #357ab8;
 }
 
+
+/* DNSMOS result table */
+.dnsmos-block{
+  margin-top:26px;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:rgba(15,22,38,.55);
+  box-shadow:var(--shadow);
+}
+
+.dnsmos-header{
+  align-items:flex-start;
+  margin-bottom:14px;
+}
+
+.table-wrap{
+  overflow-x:auto;
+  border:1px solid var(--line);
+  border-radius:14px;
+}
+
+.dnsmos-table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:680px;
+  background:rgba(255,255,255,.02);
+}
+
+.dnsmos-table th,
+.dnsmos-table td{
+  padding:12px 14px;
+  border-bottom:1px solid var(--line);
+  text-align:center;
+  white-space:nowrap;
+}
+
+.dnsmos-table th:first-child,
+.dnsmos-table td:first-child{
+  text-align:left;
+}
+
+.dnsmos-table thead th{
+  color:var(--text);
+  background:rgba(110,168,255,.14);
+  font-weight:700;
+}
+
+.dnsmos-table tbody tr:last-child td{
+  border-bottom:none;
+}
+
+.dnsmos-table tbody tr:hover{
+  background:rgba(255,255,255,.04);
+}
+
+.ours-row{
+  background:rgba(110,168,255,.12);
+}
+
 .modal{ position:fixed; inset:0; display:none; z-index:50; }
 .modal.open{ display:block; }
 .modal-backdrop{ position:absolute; inset:0; background:rgba(0,0,0,.65); }
